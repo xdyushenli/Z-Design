@@ -1,0 +1,129 @@
+.btns{
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  z-index: 99;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 580px) {
+  .btns{
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.nav{
+  position: fixed;
+  top: 40px;
+  left: 3%;
+}
+
+/*正文*/
+#img1,#img2,#img3{
+  width: 100%;
+}
+
+.team{
+  height: 500px;
+  padding: 0 10%;
+  overflow: hidden;
+}
+
+.team-tit,.team-text{
+  float: left;
+}
+
+.team-text{
+  text-align: justify;
+}
+
+.team-tit{
+  height: 100%;
+  font-size: 25px;
+  font-weight: bold;
+  color: #a92224;
+  text-align: center;
+  line-height: 500px;
+}
+
+@media screen and (max-width: 767px) {
+  .team-tit{
+    height: 150px;
+    line-height: 150px;
+  }
+}
+
+.team-text{
+  font-size: 15px;
+  font-weight: lighter;
+  color: #7f7f7f;
+  line-height: 24px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 767px) {
+  .team-text{
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .team-text{
+    margin-top: 0;
+  }
+}
+
+.logo-list{
+  position: relative;
+  padding: 65px 10%;
+  background: rgba(169,34,36,0.9);
+  overflow: visible !important;
+}
+
+.logo-list1{
+  height: 400px;
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .logo-list1{
+    display: none;
+  }
+}
+
+.logo-list2{
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .logo-list2{
+    display: block;
+    overflow: auto;
+  }
+}
+
+.logos{
+  width: 25%;
+  height: 100%;
+  float: left;
+}
+
+.logo-item{
+  width: 70%;
+  max-height: 95px;
+  float: left;
+  margin: 32px auto;
+}
+
+@media screen and (max-width: 767px) {
+  .logo-item{
+    width: 60%;
+    margin-left: 20%;
+  }
+}
+
+.logo-unit{
+  width: 50%;
+  float: left;
+}

@@ -1,0 +1,235 @@
+body{
+  overflow: initial;
+}
+
+.list{
+  height: 0;
+  padding: 0;
+  padding-bottom: 68.11023622%;
+  float: left;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px){
+  .list{
+    padding-bottom: 34.05511812%;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .list{
+    padding-bottom: 22.10341208%;
+  }
+}
+
+.list:hover .list-details{
+  opacity: initial;
+}
+
+.list:hover .tit-3{
+  transform: rotateZ(0);
+}
+
+.bg-pic{
+  position: absolute;
+  width: 106%;
+  height: 0;
+  padding-bottom: 72.19685041%; 
+  z-index: -1;
+  transition: all .2s;
+}
+
+.bg-pic img{
+  width: 100%;
+  height: auto;
+}
+
+.list-details{
+  width: 90%;
+  height: 0;
+  padding-bottom: 61.2992126%;
+  padding-left: 5%;
+  margin: 2.5% 5%;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity .7s;
+}
+
+.user-btn{
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  z-index: 998;
+  cursor: pointer;
+}
+
+.nav{
+  top: 32px;
+  left: 3%;
+  z-index: 1000;
+  position: fixed;
+}
+
+@media screen and (max-width: 425px) {
+  .nav{
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav{
+    left: 6%;
+  }
+}
+
+.tit-1{
+  margin-top: 45%;
+  font-size: 5vw;
+  line-height: 100%;
+  color: #dfdfdf; 
+}
+
+@media screen and (min-width: 768px) {
+  .tit-1{
+    margin-top: 40%;
+    font-size: 3vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .tit-1{
+    font-size: 2vw;
+  }
+}
+
+.tit-2{
+  margin-top: 2.5%;
+  font-family: 'dutcheb';
+  font-size: 4.5vw;
+  font-weight: bold;
+  line-height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .tit-2{
+    margin-top: 2.5%;
+    font-size: 2.5vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .tit-2{
+    font-size: 1.5vw;
+  }
+}
+
+.tit-3{
+  width: 35px;
+  height: 35px;
+  margin-top: 2%;
+  transform: rotateZ(-90deg);
+  transition: transform .5s
+}
+
+@media screen and (max-width: 425px) {
+  .tit-3{
+    width: 25px;
+    height: 25px;
+  }
+}
+
+#list1-1{
+  background-color: rgba(17,42,97,0.88);
+}
+
+#list2-1{
+  background-color: rgba(26,26,27,0.88);
+}
+
+#list3-1{
+  background-color: rgba(34,105,56,0.88);
+}
+
+#list4-1{
+  background-color: rgba(35,35,37,0.88);
+}
+
+#list5-1{
+  background-color: rgba(18,23,34,0.88);
+}
+
+#list6-1{
+  background-color: rgba(96,97,100,0.88);
+}
+
+#list7-1{
+  background-color: rgba(157,45,28,0.88);
+}
+
+#list8-1{
+  background-color: rgba(6,6,14,0.88);
+}
+
+#list9-1{
+  background-color: rgba(66,68,43,0.88);
+}
+#list10-1{
+  background-color: rgba(50,115,130,0.88);
+}
+
+#list11-1{
+  background-color: rgba(18,23,34,0.88);
+}
+
+#list12-1{
+  background-color: rgba(189,158,92,0.88);
+}
+
+#list13-1{
+  background-color: rgba(210,138,138,0.88);
+}
+
+#list14-1{
+  background-color: rgba(48,42,37,0.88);
+}
+
+#list15-1{
+  background-color: rgba(174,141,53,0.88);
+}
+
+#list16-1{
+  background-color: rgba(135,159,71,0.88);
+}
+
+#list17-1{
+  background-color: rgba(152,93,67,0.88);
+}
+
+#contact{
+  float: left;
+  padding-left: 3%;
+  color: #fff;
+  background-color: #a12526;
+}
+
+.contact-text{
+  font-size: 3.5vw;
+  margin-top: 20%;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-text{
+    font-size: 1.5vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-text{
+    font-size: 1.1vw;
+  }
+}
+
+.contact-text p{
+  margin-bottom: 10px;
+}

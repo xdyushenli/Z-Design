@@ -1,0 +1,81 @@
+.alter-can{
+  position: relative;
+}
+
+#alter1,#alter2,#alter3{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  right: 5%;
+  bottom: 5%;
+  background: url(../images/icons/alter.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.alter{
+  width: 40px;
+  height: 40px;
+  position: initial;
+  background: url(../images/icons/alter.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: left;
+}
+
+.delete{
+  width: 40px;
+  height: 40px;
+  padding: 0;
+}
+
+@media screen and (max-width: 925px) {
+  .alter{
+    width: 30px;
+    height: 30px;
+  }
+
+  .delete{
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.can img{
+  float: left;
+}
+
+.logo-units{
+  min-height: 100px;
+  margin: 10px 0;
+}
+
+.logo-img{
+  width: 60%;
+  margin: 0 auto;
+  max-height: 80px;
+}
+
+@media screen and (max-width: 500px) {
+.logo-img{
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 415px) {
+.logo-img{
+    width: 40%;
+  }
+}
+
+#add{
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  background: url(../images/icons/add.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}

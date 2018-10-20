@@ -1,0 +1,86 @@
+input{
+  border: 0;
+}
+
+textarea{
+  display: block;
+  width: 100%;
+  height: 80%;
+  padding: 6px 12px;
+  font-size: 14px;
+  color: #555;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  resize: none;
+}
+
+textarea:focus{
+  outline: none;
+}
+
+.alter-1,#alter-2{
+  background: url(../images/icons/alter.png);
+  background-size: cover;
+}
+
+.alter-1{
+  top: 2%;
+  right: 4%;
+}
+
+#alter-2{
+  bottom: 22%;
+  right: 2%;
+  color: transparent;
+}
+
+@media screen and (max-width: 525px) {
+  #alter-2{
+    bottom: 8%;
+    right: 2%;
+  }
+}
+
+#alter-2:focus{
+  outline: none;
+}
+
+.input-alter-1{
+  position: absolute;
+  width: 25%;
+  top: 5.5%;
+  right: 5%;
+  z-index: 999;
+}
+
+@media screen and (max-width: 1024px) {
+  .input-alter-1{
+    width: 15%;
+    top: 6.5%;
+    left: 20.5%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .input-alter-1{
+    top: 5.5%;
+    left: 24.5%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .input-alter-1{
+    left: 30.5%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .input-alter-1{
+    width: 25%;
+    left: 35.5%;
+  }
+}
+
+.details{
+  cursor: initial;
+}

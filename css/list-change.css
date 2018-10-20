@@ -1,0 +1,151 @@
+input{
+  width: 80%;
+  height: 102%;
+  padding: 0;
+  border: 0;
+}
+
+@media screen and (max-width: 991px) {
+  #nav{
+    left: 5%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #nav{
+    left: 10%;
+  }
+}
+
+@media screen and (max-width: 424px) {
+  #nav{
+    left: 10%;
+  }
+}
+
+#add{
+  bottom: 15%;
+  right: 10%;
+  border-radius: 50%;
+}
+
+.list-details{
+  opacity: initial;
+}
+
+.pic-change{
+  top: 32px;
+  left: 10%;
+  background: url(../images/icons/alter.png);
+  background-size: cover;
+}
+
+.fir-pic-change{
+  left: 20%;
+}
+
+@media screen and (max-width: 1200px) {
+  .fir-pic-change{
+    left: 25%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .fir-pic-change{
+    left: 18%;
+  }
+}
+
+@media screen and (max-width: 424px) {
+  .fir-pic-change{
+    left: 25%;
+  }
+}
+
+.delete{
+  top: 32px;
+  left: 20%;
+} 
+
+@media screen and (max-width: 1200px) {
+  .delete{
+    left: 25%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .delete{
+    left: 18%;
+  }
+}
+
+@media screen and (max-width: 424px) {
+  .delete{
+    left: 25%;
+  }
+}
+
+.fir-delete{
+  left: 31%;
+}
+
+@media screen and (max-width: 1200px) {
+  .fir-delete{
+    left: 41%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .fir-delete{
+    left: 26%;
+  }
+}
+
+@media screen and (max-width: 424px) {
+  .fir-delete{
+    left: 41%;
+  }
+}
+
+.tit-3{
+  transform: rotateZ(0);
+}
+
+.color-change{
+  position: relative;
+  left: 3%;
+}
+
+/*@media screen and (max-width: 1200px) {
+  .color-change{
+    left: 25%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .color-change{
+    left: 17%;
+  }
+}
+
+@media screen and (max-width: 424px) {
+  .color-change{
+    left: 25%;
+  }
+}*/
+
+.input-alter-1{
+  position: absolute;
+  width: 25%;
+  height: 7%;
+  left: 22.5%;
+  bottom: 13.5%;
+  z-index: 999;
+}
+
+@media screen and (max-width: 425px) {
+  .alter,.delete{
+    width: 25px;
+    height: 25px;
+  }
+}

@@ -1,0 +1,88 @@
+.nav-list{
+  width: 35%;
+  height: 95%;
+  margin-left: 1.5%;
+  top: 2.5%;
+  height: 95%;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-list{
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+ .nav-list{
+  width: 53%;
+  margin-left: 3%;
+ } 
+}
+
+@media screen and (max-width: 320px) {
+ .nav-list{
+  width: 60%;
+ } 
+}
+
+.text{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.father{
+  position: relative;
+}
+
+.btns{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  z-index: 99;
+  cursor: pointer;
+}
+
+.nav{
+  position: fixed;
+  top: 40px;
+  left: 3%;
+}
+
+@media screen and (max-width: 992px) {
+ .nav{
+  width: 45px;
+  height: 45px;
+ } 
+}
+
+@media screen and (max-width: 425px) {
+ .nav{
+  width: 30px;
+  height: 30px;
+ } 
+}
+
+.delete{
+  top: 40px;
+  right: 80px;
+}
+
+.alter-1{
+  top: 40px;
+  right: 160px;
+  background: url(../images/icons/alter.png);
+  background-size: cover;
+}
+
+.alter-2{
+  bottom: 35px;
+  right: 10%;
+  background: url(../images/icons/alter_red.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nav-list{
+  position: fixed;
+}

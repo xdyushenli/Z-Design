@@ -1,0 +1,615 @@
+.cans{
+  height: 100%;
+}
+
+#text-lists,#text-lists2{
+  top: 0;
+  transition: all 1s cubic-bezier(1,0,.5,1);
+}
+
+#text-lists{
+  right: 0;
+  transition: all .7345s cubic-bezier(1,0,.5,1);
+}
+
+.tit-1,.tit-2,.tit-3,.tit-4,.text-details{
+  transition: all .4s cubic-bezier(1,0,.5,1);
+  opacity: 0;
+  overflow: hidden;
+  height: auto;
+}
+
+.tit-1,.tit-3,.btn-details{
+  font-family: dutcheb;
+}
+
+.tit-2,.text-details,.copyright{
+  font-family: 方正兰亭纤黑简体;
+}
+
+#up,#up-min,#down,#down-min{
+  position: fixed;
+}
+
+body{
+  overflow: hidden;
+}
+
+/*按钮样式开始*/
+.btns{
+  position: absolute;
+  z-index: 999;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+  z-index: 1002;
+}
+
+@media screen and (max-width: 1024px) {
+  .btns{
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.stick{
+  position: absolute;
+  display: block;
+  width: 45%;
+  height: 2px;
+  border-radius: 1px;
+  background-color: #6a6b6b;
+  transition: transform .5s;
+}
+
+.nav{
+  top: 4.5%;
+  left: 2.5%;
+}
+
+@media screen and (min-width: 1440px) {
+  .nav{
+    top: 4%;
+  }
+}
+
+@media screen and (max-width: 585px) {
+  .nav{
+    top: 4.5%;
+    left: 5%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .nav{
+    left: 7%;
+  }
+}
+
+.nav-1{
+  top: 14px;
+  left: 27.5%;
+  transition: all .2s;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-1{
+    top: 11.5px;
+    left: 27.5%;
+  }
+}
+
+.nav-2{
+  top: 19px;
+  left: 27.5%;
+  transition: all .2s;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-2{
+    top: 16.5px;
+    left: 27.5%;
+  }
+}
+
+.nav-3{
+  top: 24px;
+  left: 27.5%;
+  transition: top .2s;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-3{
+    top: 21.5px;
+    left: 27.5%;
+  }
+}
+
+.nav:hover .nav-1{
+  top: 28%;
+}
+
+.nav:hover .nav-3{
+  top: 68%;
+}
+
+#up,#up-min{
+  bottom: 15%;
+  right: 2%;
+}
+
+#up-min,#down-min{
+  display: none;
+}
+
+#up-min{
+  background: url(../images/icons/up.png);
+  background-size: cover;
+}
+
+#down-min{
+  background: url(../images/icons/down.png);
+  background-size: cover;
+}
+
+@media screen and (max-width: 525px) {
+  #up-min,#down-min{
+    display: block;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  #up{
+    display: none;
+  }
+}
+
+#up-1{
+  top: 17px;
+  left: 4px;
+  transform: rotate(145deg);
+}
+
+@media screen and (max-width: 1024px) {
+  #up-1{
+    top: 15px;
+    left: 3.5px;
+  }
+}
+
+#up-2{
+  top: 17px;
+  right: 4px;
+  transform: rotate(35deg);
+}
+
+@media screen and (max-width: 1024px) {
+  #up-2{
+    top: 15px;
+    right: 3.5px;
+  }
+
+  #down-1{
+    top: 19px;
+    left: 3.5px;
+  }
+
+  #down-2{
+    top: 19px;
+    right: 3.5px;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  #up-1{
+    top: 15px;
+    left: 3.5px;
+  }
+
+  #up-2{
+    transform: rotate(31deg);
+  }
+
+  #down-1{
+    top: 19px;
+    left: 3.5px;
+  }
+
+  #down-2{
+    top: 19px;
+    right: 4.5px;
+  }
+}
+
+/*#up:hover #up-1{
+  transform: rotate(153deg);
+}
+
+#up:hover #up-2{
+  transform: rotate(26deg);
+}*/
+
+#down,#down-min{
+  bottom: 8%;
+  right: 2%;
+}
+
+@media screen and (max-width: 525px) {
+  #down{
+    display: none;
+  }
+}
+
+#down-1{
+  top: 21px;
+  left: 4px;
+  transform: rotate(35deg);
+}
+
+@media screen and (max-width: 1024px) {
+  #down-1{
+    top: 19px;
+    left: 3.5px;
+  }
+}
+
+#down-2{
+  top: 21px;
+  right: 4px;
+  transform: rotate(145deg);
+}
+
+@media screen and (max-width: 1024px) {
+  #down-2{
+    top: 19px;
+    right: 3.5px;
+  }
+}
+
+/*#down:hover #down-1{
+  transform: rotate(26deg);
+}
+
+#down:hover #down-2{
+  transform: rotate(153deg);
+}*/
+/*按钮样式结束*/
+
+/*项目样式开始*/
+.pro{
+  width: 100%;
+  height: 100%;
+  display: flex !important;
+  overflow: hidden;
+}
+
+.can{
+  width: 100%;
+  height: 100%;
+}
+
+.bg-pic{
+  position: relative;
+  width: 104%;
+  height: 104%;
+}
+
+@media screen and (max-width: 425px) {
+  .bg-pic{
+    width: 200%;
+  }
+
+  #pro-1 .bg-pic{
+    width: 100%;
+    height: auto;
+  }
+}
+
+.canner{
+  position: absolute;
+  width: 35%;
+  height: 95%;
+  margin-left: 1.5%;
+  top: 2.5%;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .canner{
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+ .canner{
+  width: 53%;
+  margin-left: 3%;
+ } 
+}
+
+@media screen and (max-width: 320px) {
+ .canner{
+  width: 60%;
+ } 
+}
+
+.text{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.logo{
+  width: 80px;
+  height: 9.5px;
+  margin-top: 28px;
+  z-index: 999;
+  margin-left: 25%;
+}
+
+@media screen and (min-width: 1441px) {
+ .logo{
+    width: 144px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+ .logo{
+    margin-top: 25px;
+  }
+}
+
+@media screen and (max-width: 585px) {
+ .logo{
+    display: none !important;
+ }
+}
+
+.details{
+  display: none;
+  position: absolute;
+  width: 75%;
+  height: 100%;
+  margin-left: 25%;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .details{
+    margin-left: 23%;
+  }
+}
+
+@media screen and (max-width: 585px) {
+ .details{
+  margin-top: 75%;
+  margin-left: 12%;
+ }
+}
+
+.tit-1{
+  display: block;
+  color: #fff;
+  margin-top: 45%;
+  font-size: 16px;
+}
+
+/*#pro-2 .tit-1{
+  margin-top: 20%;
+}*/
+
+@media screen and (max-width: 1024px) {
+  .tit-1{
+    margin-top: 35%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tit-1{
+    margin-top: 50%;
+  }
+}
+
+@media screen and (max-height: 662px) {
+  .tit-1{
+    margin-top: 20%;
+  }
+}
+
+.tit-2{
+  max-width: 280px;
+  display: block;
+  margin-top: 10%; 
+  font-size: 40px;
+  font-weight: lighter;
+  color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+  .tit-2{
+    font-size: 30px;
+    max-width: 215px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tit-2{
+    font-size: 20px;
+    max-width: 142px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+ .tit-2{
+  font-size: 27px;
+  max-width: 190px;
+ }
+}
+
+.tit-3{
+  display: block;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1024px) {
+  .tit-3{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tit-3{
+    font-size: 15px;
+  }
+}
+
+.tit-4{
+  height: 35px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+@media screen and (max-width: 768px) {
+  .tit-4{
+    height: 30px;
+    margin-top: 10%;
+  }
+}
+
+.tit-41{
+  float: left;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  transition: all .5s;
+}
+
+@media screen and (max-width: 768px) {
+  .tit-41{
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.canner:hover .tit-41{
+  transform: rotate(180deg);
+}
+
+.btn-details{
+  margin-top: 6px;
+  margin-left: 5px;
+  display: block;
+  width: 65px;
+  opacity: 0;
+  float: left;
+  overflow: hidden;
+  font-size: 15px;
+  white-space: nowrap;
+  transition: all .5s;
+}
+
+.canner:hover .btn-details{
+  opacity: 1;
+  margin-left: 12px;
+}
+
+.text-details{
+  width: 85%;
+  height: 35%;
+  padding-right: 15%;
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 30px;
+  text-align: justify;
+  letter-spacing: 1px;
+  white-space: pre-wrap;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .text-details{
+    margin-top: 10%;
+  }
+}
+
+@media screen and (max-width: 585px) {
+ .text-details{
+  display: none;
+ }
+}
+
+.copyright{
+  position: absolute;
+  bottom: 3%;
+  display: block;
+  font-size: 10px;
+  color: #fff;
+  z-index: 999;
+  margin-left: 25%;
+}
+
+@media screen and (max-width: 1024px) {
+ .copyright{
+    bottom: 4%;
+  }
+}
+/*项目样式结束*/
+
+#text-1{
+  background-color: #a12526;
+}
+
+#text-2{
+  background-color: rgba(17,42,97,.88);
+}
+
+#text-3{
+  background-color: rgba(26, 26, 27, 0.88);
+}
+
+#text-4{
+  background-color: rgba(34, 105, 56, 0.88);
+}
+
+#text-5{
+  background-color: rgba(35, 35, 37, 0.88);
+}
+
+#text-6{
+  background-color: rgba(18, 23, 34, 0.88);
+}
+
+#text-7{
+  background-color: rgba(96, 97, 100, 0.88);
+}
+
+#text-8{
+  background-color: rgba(157, 45, 28, 0.88);
+}
+
+#text-9{
+  background-color: rgba(6, 6, 14, 0.88);
+}
+
+#text-10{
+  background-color: rgba(66, 68, 43, 0.88);
+}
+
+#text-11{
+  background-color: rgba(189, 154, 79, 0.88);
+}
+
+/*菜单*/
+.nav-list{
+  display: block;
+  position: absolute;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  left: -100%;
+}
